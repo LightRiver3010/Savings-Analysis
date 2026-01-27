@@ -1,0 +1,51 @@
+activity,price,category
+Streaming service monthly subscription,15,small
+Paperback book,18,small
+Movie ticket,15,small
+Coffee shop visit with pastry,12,small
+Bowling (one game with shoe rental),15,small
+Mini golf round,14,small
+Museum admission,25,small
+Escape room (per person),35,small
+Yoga class drop-in,20,small
+Haircut,30,small
+Nice dinner out for one,50,small-medium
+Round of golf (public course),45,small-medium
+Massage (60 minutes),100,small-medium
+Concert ticket (general admission),125,small-medium
+Gym membership (monthly),50,small-medium
+Wine tasting experience,60,small-medium
+Cooking class,85,small-medium
+Theater ticket (Broadway/regional),120,small-medium
+Amusement park day pass,90,small-medium
+Spa day (basic package),150,small-medium
+Weekend camping trip,200,medium
+Hot air balloon ride,250,medium
+Scuba diving certification course,400,medium
+Ski day pass,150,medium
+Golf lesson package (5 lessons),350,medium
+Weekend hotel getaway,300,medium
+Professional sporting event tickets (2),200,medium
+Kayaking tour,175,medium
+Photography class series,250,medium
+Fine dining experience for two,250,medium
+Domestic flight (round trip),400,medium-high
+Ski weekend trip,700,medium-high
+Music festival pass,450,medium-high
+Cruise (3-day short),600,medium-high
+Premium concert tickets (floor seats),350,medium-high
+Fitness retreat weekend,500,medium-high
+LASIK eye surgery down payment,500,medium-high
+New gaming console,500,medium-high
+Skydiving experience,300,medium-high
+Helicopter tour,250,medium-high
+Week-long beach vacation,2000,high
+International flight (round trip),1200,high
+Destination wedding attendance,1500,high
+Home theater system,1500,high
+Disney World vacation (family),4500,high
+European vacation (week),3500,high
+Luxury spa retreat weekend,1000,high
+Private yacht charter (day),2500,high
+Hawaii vacation (week),4000,high
+African safari trip,6000,high
