@@ -30,11 +30,11 @@ finals_df = pd.DataFrame(finals)
 finals_df.columns = ['price']
 before_low_10 = finals_df['price'].quantile(0.10).round(2)
 before_top_10 = finals_df['price'].quantile(0.90).round(2)
-st.write(f"In the worst 10% of scenarios, you spend ${before_top_10} over {months} months.")
-st.write(f"But, in the best 10% of cases, you only spend ${before_low_10} in {months} months.")
-st.write("Using this data can be advantageous because it allows you to prepare a safety net. If you know the upper limit of your expenses, you don't need to worry too much about not having enough (aside from unpredictable emergency costs, of course).")
+st.markdown(f"In the worst 10% of scenarios, you spend **${before_top_10} over {months} months.**")
+st.markdown(f"But, in the best 10% of cases, you only spend **${before_low_10} in {months} months.**")
+st.markdown("Using this data can be advantageous because it allows you to prepare a safety net. If you know the upper limit of your expenses, you don't need to worry too much about not having enough (aside from unpredictable emergency costs, of course).")
 
-st.write("And this information is great and all, but wouldn't it be great if there was a way we could lower this spending...?")
+st.write("And this information is great and all, but wouldn't it be great if there was a way we could **lower this spending...?**")
 if st.button("Continue"):
     st.session_state.before_fig = before_fig
     st.session_state.before_ax = before_ax

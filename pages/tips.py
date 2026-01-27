@@ -28,11 +28,12 @@ for i in range(len(st.session_state.user_tips)):
     if st.session_state[i]:
         monthly_saved += int(st.session_state.user_tips[i][1])
         tips_used.append(st.session_state.user_tips[i][0])
-st.write(monthly_saved)
 
 
-st.write("Done saving? Let's proceed to the final stage to see how much your monthly bill has changed.")
+st.write("Done saving? Let's proceed to the final stage to **see how much your monthly bill has changed.**")
 if st.button("Continue"):
     st.session_state.tips_used = tips_used
+    if monthly_saved < 1:
+        monthly_saved = 1
     st.session_state.monthly_saved = monthly_saved
     st.switch_page("pages/carlo_after.py")

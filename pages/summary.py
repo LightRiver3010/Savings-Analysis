@@ -59,7 +59,7 @@ st.markdown("""
     
     If you'd like to test out any of my other projects, check out [my website](https://savaryn.me/).
     
-    If you want to see any of the code for this project (written fully in Python, using Pandas, numPy, Streamlit, and Matplotlib), check out the GitHub repository [here](https://www.github.com).
+    If you want to see any of the code for this project (written fully in Python, using Pandas, numPy, Streamlit, and Matplotlib), check out the GitHub repository [here](https://github.com/LightRiver3010/Savings-Analysis).
     
     Or, if you'd like to restart the demo and play as another archetype, click the button below!
             """)

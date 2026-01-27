@@ -30,7 +30,7 @@ a.markdown(
 - Regular moviegoer
 """
 )
-if a.button("Select Archetype", key='1'):
+if a.button("Select Archetype", key=counter):
     chosen_archetype = "Standard Steve"
 counter += 1
 
@@ -46,7 +46,7 @@ b.markdown(
 - High electric/water bills
 """
 )
-if b.button("Select Archetype", key='2'):
+if b.button("Select Archetype", key=counter):
     chosen_archetype = "Rideshare Ryan"
 counter += 1
 
@@ -62,11 +62,121 @@ c.markdown(
 - Moderate-high gas spending
 """
 )
-if c.button("Select Archetype", key='3'):
+if c.button("Select Archetype", key=counter):
     chosen_archetype = "Shopping Sam"
 counter += 1
 
-# a.subheader("Moviegoing Mark")
+
+a.subheader("Moviegoing Mark")
+a.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: High")
+a.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: High")
+a.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: High")
+a.markdown(
+    """
+- Massive movie spender
+- High phone bills
+- Shops on Amazon frequently
+"""
+)
+if a.button("Select Archetype", key=counter):
+    chosen_archetype = "Moviegoing Mark"
+counter += 1
+
+
+b.subheader("Expensive Eli")
+b.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: High")
+b.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Very High")
+b.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Very High")
+b.markdown(
+    """
+- Huge gamer & Netflix fan
+- Very high electric/water/phone bills
+- Donates large amounts to charity
+"""
+)
+if b.button("Select Archetype", key=counter):
+    chosen_archetype = "Expensive Eli"
+counter += 1
+
+
+c.subheader("Gas-guzzling Gus")
+c.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: High")
+c.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Very High")
+c.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Very High")
+c.markdown(
+    """
+- Spends tons on gas
+- Moderate gamer & Spotify superfan
+- Frequently shops online
+"""
+)
+if c.button("Select Archetype", key=counter):
+    chosen_archetype = "Gas-guzzling Gus"
+counter += 1
+
+
+a.subheader("Stylish Sabrina")
+a.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Very High")
+a.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Very High")
+a.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: High")
+a.markdown(
+    """
+- Spends lots at Old Navy
+- Lots of monthly subscriptions
+- High phone/cable bills
+"""
+)
+if a.button("Select Archetype", key=counter):
+    chosen_archetype = "Stylish Sabrina"
+counter += 1
+
+
+b.subheader("Amazon Andy")
+b.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Very High")
+b.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Medium")
+b.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: High")
+b.markdown(
+    """
+- Spends most earnings on Amazon
+- High phone/cable bills
+- Spends little on gas/movies/games
+"""
+)
+if b.button("Select Archetype", key=counter):
+    chosen_archetype = "Amazon Andy"
+counter += 1
+
+
+c.subheader("Gaming George")
+c.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Low")
+c.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Medium")
+c.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Medium")
+c.markdown(
+    """
+- Frequently buys new games/consoles
+- High electric/water bills
+- Spends little on other categories
+"""
+)
+if c.button("Select Archetype", key=counter):
+    chosen_archetype = "Gaming George"
+counter += 1
+
+
+b.subheader("Thrifty Thomas")
+b.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Low")
+b.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Low")
+b.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Low")
+b.markdown(
+    """
+- Spends little on gas/food
+- Enjoys shopping at Old Navy
+- High cable/utility bills
+"""
+)
+if b.button("Select Archetype", key=counter):
+    chosen_archetype = "Thrifty Thomas"
+counter += 1
 
 if chosen_archetype != None:
     st.session_state.arch = chosen_archetype
