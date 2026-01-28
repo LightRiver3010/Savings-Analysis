@@ -163,18 +163,18 @@ if c.button("Select Archetype", key=counter):
 counter += 1
 
 
-b.subheader("Thrifty Thomas")
-b.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Low")
-b.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Low")
-b.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Low")
-b.markdown(
+a.subheader("Thrifty Thomas")
+a.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Low")
+a.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Low")
+a.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Low")
+a.markdown(
     """
 - Spends little on gas/food
 - Enjoys shopping at Old Navy
 - High cable/utility bills
 """
 )
-if b.button("Select Archetype", key=counter):
+if a.button("Select Archetype", key=counter):
     chosen_archetype = "Thrifty Thomas"
 counter += 1
 

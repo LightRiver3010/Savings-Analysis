@@ -23,3 +23,6 @@ For example, for someone like Moviegoer Mark, the AI integration may recommend m
 Again, the limitation of not having *actual* user data is still a big one, but getting around that hurdle would likely require partnership with a third-party company, which goes far beyond the scope of this simple project.
 So, if this app is updated, that is the direction it will go (aside from minor quality improvements). Stay posted and keep an eye on my LinkedIn posts for updates!
 """)
+
+if st.button("Back"):
+    st.switch_page("app.py")
