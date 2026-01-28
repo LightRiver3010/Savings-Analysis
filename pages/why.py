@@ -16,5 +16,10 @@ Originally, my plan for this project was to allow users to enter in their info, 
 st.subheader("My (App's) Future")
 st.markdown(
     """
-Not quite sure yet... 
+Overall, this web app is quite simple. There's no groundbreaking math or code behind it - it's primary focus is showing people how easy it can be to save some money.
+On top of that, it's not even fully customizable for users. Actually using the app is not overly helpful (yet).
+But, I have a vision for the future. With AI integration, I forsee truly customized savings tips, generated for *specific* user expenses.
+For example, for someone like Moviegoer Mark, the AI integration may recommend methods for home-movie experiences rather than costly tickets and snacks.
+Again, the limitation of not having *actual* user data is still a big one, but getting around that hurdle would likely require partnership with a third-party company, which goes far beyond the scope of this simple project.
+So, if this app is updated, that is the direction it will go (aside from minor quality improvements). Stay posted and keep an eye on my LinkedIn posts for updates!
 """)

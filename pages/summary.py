@@ -47,7 +47,7 @@ st.markdown("""
     They're about living a lifestyle where money is spent on purchases that are truly important, not the newest craze or interesting thing. 
     After all, if you make the decision to put away more than you spend, you'll start saving money no matter what your financial situation!
     
-    So, now all that's left is for you to go take action. **Get out there and save some money!**
+    So now, all that's left is for you to go take action. **Get out there and save some money!**
             """)
 
 st.subheader("Thanks!")
@@ -55,11 +55,13 @@ st.markdown("""
     If you've gotten this far into the simulation, I want to say thank you for testing the Demo!
     My goal with this project was to make a product genuinely useful, and I truly hope this was fulfilled by helping you learn something about spending money.
     
-    If you have any feedback on this demo, feel free to anytime [email me](mailto:james.savaryn@gmail.com).
+    If you have any feedback on this demo, feel free to **[email me](mailto:james.savaryn@gmail.com)**.
     
-    If you'd like to test out any of my other projects, check out [my website](https://savaryn.me/).
+    If you'd like to test out any of my other projects, check out **[my website](https://savaryn.me/)**.
     
-    If you want to see any of the code for this project (written fully in Python, using Pandas, numPy, Streamlit, and Matplotlib), check out the GitHub repository [here](https://github.com/LightRiver3010/Savings-Analysis).
+    If I make an update to this web app, it'll likely be on my **[LinkedIn profile](https://www.linkedin.com/in/jsavaryn/)**.
+    
+    If you want to see any of the code for this project (written fully in Python, using Pandas, numPy, Streamlit, and Matplotlib), check out the **[GitHub Repository](https://github.com/LightRiver3010/Savings-Analysis)**.
     
     Or, if you'd like to restart the demo and play as another archetype, click the button below!
             """)

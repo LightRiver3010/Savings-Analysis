@@ -67,7 +67,7 @@ if c.button("Select Archetype", key=counter):
 counter += 1
 
 
-a.subheader("Moviegoing Mark")
+a.subheader("Moviegoer Mark")
 a.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: High")
 a.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: High")
 a.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: High")
@@ -79,7 +79,7 @@ a.markdown(
 """
 )
 if a.button("Select Archetype", key=counter):
-    chosen_archetype = "Moviegoing Mark"
+    chosen_archetype = "Moviegoer Mark"
 counter += 1
 
 
