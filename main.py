@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+from io import BytesIO
 
 df = pd.read_excel('data/fictitious_credit_card_transactions_final.xlsx')
 
@@ -185,3 +187,42 @@ def gather_stats_relative():
 stats_relative = gather_stats_relative()
 stats_relative = pd.DataFrame.from_dict(stats_relative)
 stats_relative = stats_relative.reset_index()
+
+
+title_font = ImageFont.truetype('SourceSans3-Medium.ttf', size=80)
+body_font = ImageFont.truetype('SourceSans3-Medium.ttf', size=30)
+med_font = ImageFont.truetype('SourceSans3-Medium.ttf', size=50)
+
+def download(savings_amount, tip_list, before_fig):
+    img_buf = BytesIO()
+    chart1_buf = BytesIO()
+    
+    img = Image.new('RGB', (1920, 1080), color='white')
+    draw = ImageDraw.Draw(img)
+    draw.text((50, 50), 'My Savings Report', font=title_font, fill='black')
+    draw.text((50, 175), f'By going through the Savings Simulator at saving-sim.streamlit.app and \ntaking action on with the following tips...', font=body_font, fill='black')
+    
+    before_fig.savefig(chart1_buf, format='PNG')
+    chart1 = Image.open(chart1_buf)
+    
+    
+    for i, tip in enumerate(tip_list):
+        y_pos = 275 + (i * 47)
+        draw.text((50, y_pos), f'- {tip}', fill='black', font=body_font)
+
+    draw.text((50, 1000), f'...I realized I could save ${savings_amount} each month! That adds up fast!', font=body_font, fill='black')
+    
+    #Adding Money Decoration
+    money_decor = Image.open('data/flying_money.webp').convert('RGBA')
+    money_decor = money_decor.resize((400, 400))
+    img.paste(money_decor, (1300, 100), mask=money_decor)
+    
+    img.paste(chart1, (1150, 600))
+    draw.text((1160, 575), f'My Expected Spending Before (Red) vs. After (Green)', font=body_font, fill='black')
+    
+    img.save(img_buf, format='PNG')
+    img_buf.seek(0)
+    img_data = img_buf.getvalue()
+    return img_data
+    # with open("SavingsReport.png", "wb") as f:
+    #     f.write(img_data)

@@ -2,9 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import math
+from main import download
 
 tips_used = st.session_state.tips_used
 avg_diff = st.session_state.avg_diff
+after_fig = st.session_state.after_fig
 
 st.header("Summary")
 
@@ -49,6 +51,15 @@ st.markdown("""
     
     So now, all that's left is for you to go take action. **Get out there and save some money!**
             """)
+
+#Report goes Here
+report = download(avg_diff, tips_used, after_fig)
+st.download_button(
+    label="Download Savings Report",
+    data=report,
+    file_name="SavingsReport.png",
+    mime="image/png"
+)
 
 st.subheader("Thanks!")
 st.markdown("""

@@ -43,4 +43,5 @@ st.markdown(f"**Average Monthly difference in spending:** ${avg_diff}")
 st.write("Done reviewing your graphs? If so, let's proceed to a summary of what we've learned.")
 if st.button("Continue"):
     st.session_state.avg_diff = avg_diff
+    st.session_state.after_fig = before_fig
     st.switch_page("pages/summary.py")
