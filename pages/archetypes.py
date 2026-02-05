@@ -19,7 +19,7 @@ data = {
 
 a, b, c = st.columns(3)
 counter = 0
-a.subheader("Standard Steve")
+a.subheader("Standard Steve :man:")
 a.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Average")
 a.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Average")
 a.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Low")
@@ -35,7 +35,7 @@ if a.button("Select Archetype", key=counter):
 counter += 1
 
 
-b.subheader("Rideshare Ryan")
+b.subheader("Rideshare Ryan :red_car:")
 b.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: High")
 b.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: High")
 b.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Average")
@@ -51,7 +51,7 @@ if b.button("Select Archetype", key=counter):
 counter += 1
 
 
-c.subheader("Shopping Sam")
+c.subheader("Shopping Sam :shopping_cart:")
 c.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Average")
 c.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Average")
 c.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Average")
@@ -67,7 +67,7 @@ if c.button("Select Archetype", key=counter):
 counter += 1
 
 
-a.subheader("Moviegoer Mark")
+a.subheader("Moviegoer Mark :popcorn:")
 a.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: High")
 a.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: High")
 a.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: High")
@@ -83,7 +83,7 @@ if a.button("Select Archetype", key=counter):
 counter += 1
 
 
-b.subheader("Expensive Eli")
+b.subheader("Expensive Eli :moneybag:")
 b.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: High")
 b.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Very High")
 b.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Very High")
@@ -99,7 +99,7 @@ if b.button("Select Archetype", key=counter):
 counter += 1
 
 
-c.subheader("Gas-guzzling Gus")
+c.subheader("Gas-guzzling Gus :fuelpump:")
 c.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: High")
 c.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Very High")
 c.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Very High")
@@ -115,7 +115,7 @@ if c.button("Select Archetype", key=counter):
 counter += 1
 
 
-a.subheader("Stylish Sabrina")
+a.subheader("Stylish Sabrina :high_heel:")
 a.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Very High")
 a.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Very High")
 a.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: High")
@@ -131,7 +131,7 @@ if a.button("Select Archetype", key=counter):
 counter += 1
 
 
-b.subheader("Amazon Andy")
+b.subheader("Amazon Andy :truck:")
 b.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Very High")
 b.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Medium")
 b.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: High")
@@ -147,7 +147,7 @@ if b.button("Select Archetype", key=counter):
 counter += 1
 
 
-c.subheader("Gaming George")
+c.subheader("Gaming George :video_game:")
 c.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Low")
 c.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Medium")
 c.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Medium")
@@ -163,7 +163,7 @@ if c.button("Select Archetype", key=counter):
 counter += 1
 
 
-a.subheader("Thrifty Thomas")
+a.subheader("Thrifty Thomas :dollar:")
 a.progress(((stats_relative.iloc[counter, 3]) / 4), text="Monthly Spending: Low")
 a.progress(((stats_relative.iloc[counter, 4]) / 4), text="# Monthly Purchases: Low")
 a.progress(((stats_relative.iloc[counter, 1]) / 4), text="Monthly Spending Variability: Low")
