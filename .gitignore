@@ -1,0 +1,10 @@
+desktop.ini
+
+__pycache__/
+
+## Main Testing File (As a Jupyter Notebook)
+main.ipynb
+
+## Main Pillow Testing File
+pillow_test.py
+

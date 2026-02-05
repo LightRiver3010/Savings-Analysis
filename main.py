@@ -93,20 +93,20 @@ def generate_expense_pie_chart(customer_id):
 def avg_spending_std_monthly(customer_id):
     customer_df = df[df['customer_id'] == customer_id]
     customer_df = customer_df.groupby(['customer_id', 'month_number'])['price'].sum().reset_index()
-    customer_std = (customer_df['price'].std()).round(2)
+    customer_std = round((customer_df['price'].std()), 2)
     return customer_std
 
 def avg_spending_std_weekly(customer_id):
     customer_df = df[df['customer_id'] == customer_id]
     customer_df = customer_df.groupby(['customer_id', 'week_number'])['price'].sum().reset_index()
-    customer_std = (customer_df['price'].std()).round(2)
+    customer_std = round((customer_df['price'].std()), 2)
     return customer_std
 
 def avg_monthly_expense_total(customer_id, diff = 0):
     customer_df = df[df['customer_id'] == customer_id]
     customer_df = customer_df.groupby(['month_number'])['price'].sum().reset_index()
     n = customer_df['month_number'].nunique()
-    avg_monthly_expenses = ((customer_df['price'].sum() - (n * diff)) / n).round(2)
+    avg_monthly_expenses = round(((customer_df['price'].sum() - (n * diff)) / n), 2)
     return avg_monthly_expenses
 
 def avg_monthly_expenses_count(customer_id):
@@ -136,7 +136,7 @@ def top_expense_per_category(customer_id):
     sorted_expenses = customer_df.groupby(['item_genre', 'location_of_purchase'])['price'].sum().reset_index()
     sorted_expenses = sorted_expenses.sort_values(by=['item_genre', 'price'], ascending=False)
     for i in sorted_expenses['item_genre'].unique():
-        top[f'{i}'] = (sorted_expenses[sorted_expenses['item_genre'] == i]['price'].max()).round(2), sorted_expenses[sorted_expenses['item_genre'] == i]['location_of_purchase'].iloc[:3]
+        top[f'{i}'] = round((sorted_expenses[sorted_expenses['item_genre'] == i]['price'].max()), 2), sorted_expenses[sorted_expenses['item_genre'] == i]['location_of_purchase'].iloc[:3]
     return top
 
 def find_top_item_genres(customer_id):
@@ -226,3 +226,5 @@ def download(savings_amount, tip_list, before_fig):
     return img_data
     # with open("SavingsReport.png", "wb") as f:
     #     f.write(img_data)
+
+print(df.shape)
