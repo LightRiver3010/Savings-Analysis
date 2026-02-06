@@ -6,8 +6,8 @@ tips = pd.read_excel('data/money_saving_tips_final.xlsx')
 chosen_archetype = st.session_state.arch
 
 
-st.header("Customized Savings Tips")
-st.write("See below for some savings tips chosen specifically for your top spending categories. Feel free to check off any of the tips that you feel able to take action on!")
+st.header("Customized Savings Tips :moneybag:")
+st.write("See below for some savings tips chosen *specifically for your top spending categories*. Feel free to **check off any of the tips** that you feel able to take action on!")
 
 if 'user_tips' not in st.session_state:
     user_tips = get_tips(tips, chosen_archetype)
@@ -30,8 +30,8 @@ for i in range(len(st.session_state.user_tips)):
         tips_used.append(st.session_state.user_tips[i][0])
 
 
-st.write("Done saving? Let's proceed to the final stage to **see how much your monthly bill has changed.**")
-if st.button("Continue"):
+st.write("Done saving? :white_check_mark: Let's proceed to the final stage to **see how much your monthly bill has changed.**")
+if st.button("**Continue**"):
     st.session_state.tips_used = tips_used
     if monthly_saved < 1:
         monthly_saved = 1

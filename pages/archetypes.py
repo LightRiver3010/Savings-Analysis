@@ -2,7 +2,6 @@ import streamlit as st
 from main import stats_relative
 
 st.header("Choose your Achetype")
-st.write("Choose the character archetype below that most closely aligns with your current spending habits.")
 
 chosen_archetype = None
 
@@ -30,7 +29,7 @@ a.markdown(
 - Regular moviegoer
 """
 )
-if a.button("Select Archetype", key=counter):
+if a.button("**Select Archetype**", key=counter):
     chosen_archetype = "Standard Steve"
 counter += 1
 
@@ -46,7 +45,7 @@ b.markdown(
 - High electric/water bills
 """
 )
-if b.button("Select Archetype", key=counter):
+if b.button("**Select Archetype**", key=counter):
     chosen_archetype = "Rideshare Ryan"
 counter += 1
 
@@ -62,7 +61,7 @@ c.markdown(
 - Moderate-high gas spending
 """
 )
-if c.button("Select Archetype", key=counter):
+if c.button("**Select Archetype**", key=counter):
     chosen_archetype = "Shopping Sam"
 counter += 1
 
@@ -78,7 +77,7 @@ a.markdown(
 - Shops on Amazon frequently
 """
 )
-if a.button("Select Archetype", key=counter):
+if a.button("**Select Archetype**", key=counter):
     chosen_archetype = "Moviegoer Mark"
 counter += 1
 
@@ -94,7 +93,7 @@ b.markdown(
 - Donates large amounts to charity
 """
 )
-if b.button("Select Archetype", key=counter):
+if b.button("**Select Archetype**", key=counter):
     chosen_archetype = "Expensive Eli"
 counter += 1
 
@@ -110,7 +109,7 @@ c.markdown(
 - Frequently shops online
 """
 )
-if c.button("Select Archetype", key=counter):
+if c.button("**Select Archetype**", key=counter):
     chosen_archetype = "Gas-guzzling Gus"
 counter += 1
 
@@ -126,7 +125,7 @@ a.markdown(
 - High phone/cable bills
 """
 )
-if a.button("Select Archetype", key=counter):
+if a.button("**Select Archetype**", key=counter):
     chosen_archetype = "Stylish Sabrina"
 counter += 1
 
@@ -142,7 +141,7 @@ b.markdown(
 - Spends little on gas/movies/games
 """
 )
-if b.button("Select Archetype", key=counter):
+if b.button("**Select Archetype**", key=counter):
     chosen_archetype = "Amazon Andy"
 counter += 1
 
@@ -158,7 +157,7 @@ c.markdown(
 - Spends little on other categories
 """
 )
-if c.button("Select Archetype", key=counter):
+if c.button("**Select Archetype**", key=counter):
     chosen_archetype = "Gaming George"
 counter += 1
 
@@ -174,7 +173,7 @@ a.markdown(
 - High cable/utility bills
 """
 )
-if a.button("Select Archetype", key=counter):
+if a.button("**Select Archetype**", key=counter):
     chosen_archetype = "Thrifty Thomas"
 counter += 1
 
